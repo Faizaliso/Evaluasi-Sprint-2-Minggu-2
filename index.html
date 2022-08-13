@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluasi Sprint 2 Minggu 2</title>
+</head>
+
+<body>
+    <script>
+        let myArray = ['H', 'e', 'l', 'o', '', 'W', 'o', 'r', 'l', 'd']
+        let text = ""
+        for (let index of myArray) {
+            console.log(text += index)
+        }
+
+        // //STUDY CASE 1
+        //Pak Abdurrahim adalah seorang pedagang sayur,
+        //selama satu minggu terakhir beliau mendapat keuntungan besar.
+        //berikut data keuntungannya:
+        console.log('STUDY CASE 1')
+        let pakAbdu = {
+            Senin: 55400,
+            Selasa: 61600,
+            Rabu: 49300,
+            Kamis: 53200,
+            Jumat: 54500,
+            Sabtu: 51500,
+            Minggu: 70000
+        }
+        //Jumlahkanlah semua keuntungannya menggunakan perulangan for in !
+        for (key in pakAbdu) {
+
+            console.log(pakAbdu[key])
+        }
+
+
+        //STUDY CASE 2
+        //Pak Sukirman adalah seorang Hansip yang berjaga 24 Jam di Bank Ash-Shobar. 
+        //Suatu waktu di siang bolong, beliau lengah dan tertidur pulas. 
+        //beberapa jam sudah berlalu,  lalu Pak Sukirman terbangun, 
+        //beliau terkejut dan bergegas mengecek log di alat pengintai, dan didapati lognya sebagai berikut:
+        console.log('STUDY CASE 2')
+        let bankAshobar = [{
+            Jam: '11.59',
+            Masuk: 'Karyawan 001'
+        }, {
+            Jam: '12:01',
+            Masuk: 'karyawan 015',
+        }, {
+            Jam: '12:10',
+            Masuk: 'TIDAK DIKENAL',
+        }, {
+            Jam: '12:13',
+            Masuk: 'Karyawan 004',
+        }, {
+            Jam: '12.14',
+            Masuk: 'TIDAK DIKENAL'
+        }]
+        //Berdasarkan data tersebut, di jam berapa saja TIDAK DIKENAL masuk? 
+        //Masukanlah data waktu tersebut untuk dijadikan Laporan Pak Sukirman dalam bentuk Array
+        // let kebobolan = 2
+        // console.table(bankAshobar[2])
+        // bankAshobar.splice(0)
+        for (ayam in bankAshobar) {
+            console.table(ayam)
+        }
+
+        console.log(`Bank Ash-Shobar sudah kebobolan 2 kali`)
+    </script>
+</body>
+
+</html>
